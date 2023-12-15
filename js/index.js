@@ -15,8 +15,8 @@ const GetNextBlockBaseFee = async () => {
     let block = await Web3HTTPController.eth.getBlock("latest", false)
 
     const gasUsed = parseInt(block.gasUsed)
-    const baseFee = parseInt(block.baseFeePerGas, 16)
-    console.log(`${block.number}th block | gasUsed: ${gasUsed} Wei baseFee: ${baseFee} Wei`)
+    const baseFee = parseInt(block.baseFeePerGas, 10)
+    console.log(`${block.number}th block | gasUsed: ${gasUsed} Wei baseFee: ${baseFee}`)
 
     const gasUsedPercentage = (gasUsed / MaxGasPerBlock) * 100
     console.log(`percentage for gas used (max:30M): ${gasUsedPercentage}`)

@@ -32,7 +32,3 @@ $Gas Fee = GAS LIMIT * (BASE\ FEE\ + \ PRIORITY\ FEE\ )$
 ## Base Fee Calculate Formula
 
 $BaseFee_{N} = BaseFee_{N-1} + BaseFee_{N-1} * (BaseFeeRatio_{N-1} - 50) * \frac{0.25}{100}$
-
-## Demo
-
-![demo](https://github.com/MoSangIl/calculate-fee-by-EIP1559/assets/45113627/41150d68-d119-495f-9f00-4de0e737337d)
